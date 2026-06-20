@@ -48,7 +48,7 @@ export default function ReportsPage() {
       <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
           <label className="text-lg font-bold text-slate-800">1. Select Company</label>
-          <Select value={selectedCompany} onValueChange={setSelectedCompany}>
+          <Select value={selectedCompany} onValueChange={(value) => setSelectedCompany(value || "")}>
             <SelectTrigger className="h-14 text-lg border-2 border-blue-200 bg-blue-50">
               <SelectValue placeholder="Choose a Company" />
             </SelectTrigger>
